@@ -1,9 +1,7 @@
 <launch>
 
     <!-- Empty World -->
-    <include file="$(find gazebo_ros)/launch/empty_world.launch">
-      <arg name="world_name" value="/usr/share/gazebo-11/worlds/rubble.world"/>
-      <arg name="use_sim_time" value="true"/>
+    <include file="$(find gazebo_ros)/launch/rubble_world.launch">
       <!--<arg name="paused" value="true"/>-->
     </include>
 
@@ -11,7 +9,7 @@
     <arg name="robot" default="$(find dingo_description)/urdf/dingo.urdf"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg robot)" />
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf 
-    -z 3
+    -x 4  -z 3
 
     -model dingo_gazebo"/>
 
