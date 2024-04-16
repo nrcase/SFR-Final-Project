@@ -9,7 +9,7 @@
     <arg name="robot" default="$(find dingo_description)/urdf/dingo.urdf"/>
     <param name="robot_description" command="$(find xacro)/xacro --inorder $(arg robot)" />
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf 
-    -x 4  -z 3
+    -x 4 -z 1
 
     -model dingo_gazebo"/>
 
