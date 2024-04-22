@@ -7,11 +7,15 @@
 # STUFF FOR PROJECT
 Welcome to our repo! All of our code is in master so you should be able to run from master, just follow the steps below!
 
+1. Follow the `Installation of Code`
+
+To run our experiment in the intended way, use the commands
+
 ## Installation of Code
 ### Natively
-- Install Ubuntu 20.04 onto the Pi's SD card via the [Raspberry Pi Imager](https://www.raspberrypi.com/software/), and setup username, password and network information.
+- Install Ubuntu 20.04
 - Install [ros-noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
-- Install necessary packages via `sudo apt-get install python3-catkin-tools git python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool python3-pip build-essential wireless-tools libraspberrypi-bin ros-noetic-joy ros-noetic-catkin python3-catkin-tools i2c-tools libi2c-dev python3-smbus`
+- Install necessary packages via `sudo apt-get install python3-catkin-tools git python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool python3-pip build-essential wireless-tools ros-noetic-joy ros-noetic-catkin python3-catkin-tools i2c-tools libi2c-dev python3-smbus`
 - Install necessary python packages via `pip install spidev transforms3d adafruit-circuitpython-bno055 pillow rpi.gpio pyserial`
 - Change directory to the home folder: `cd ~`
 - Clone this (the Dingo Quadruped) repository using git: `git clone ...`
