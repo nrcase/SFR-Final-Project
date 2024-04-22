@@ -14,7 +14,8 @@ for dingo_description robot</p>
   <depend>robot_state_publisher</depend>
   <depend>rviz</depend>
   <depend>joint_state_publisher_gui</depend>
-  <depend>gazebo</depend>
+  <depend>gazebo_ros</depend> <!--might need to change to gazebo_ros-->
+  <depend>velodyne_gazebo_plugins</depend>
   <export>
     <architecture_independent />
   </export>
