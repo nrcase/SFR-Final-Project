@@ -14,6 +14,7 @@ To run our experiment in the intended way, then use the commands from /dingo_ws
 - `roslaunch dingo dingo.launch is_physical:=0 is_sim:=1 use_joystick:=0 use_keyboard:=1` to launch control of Dingo with the keyboard. When using the keyboard, you can use the 1,2,3 keys to control the robot's behavior. The 1 key sets the Dingo in trot mode, 2 in hop mode, and 3 in rest mode. Then the delete key switches between manual and external (code) control.
 - After that, you can use 'rosrun rviz rviz' to start up RViz and then add both a RobotModel and a PointCloud2 Object which will connect to the right topics called /robot_description and /points.
 - In addition, you can view the output of the LiDAR using 'rostopic echo /points'
+- An example of the PointCloud2 data we get from the LiDAR can be found in the file called points.txt
 
 -----------------------------------------------------------------------------------------------------------------------
 
